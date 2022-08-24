@@ -1,0 +1,99 @@
+wideresnet:
+  batch-size: 128
+  test-batch-size: 128
+  epochs: 76
+  weight-decay: 2e-4
+  learning-rate: 0.1
+  momentum: 0.9
+  epsilon: 0.031
+  num-steps: 10
+  step-size: 0.007
+  beta: 6.0
+smallcnn:
+  batch-size: 128
+  test-batch-size: 128
+  epochs: 100
+  weight-decay: 0
+  learning-rate: 0.01
+  momentum: 0.3
+  epsilon: 0.031
+  num-steps: 40
+  step-size: 0.01
+  beta: 1.0
+densenet121:
+  batch-size: 128
+  test-batch-size: 128
+  epochs: 76
+  weight-decay: 2e-4
+  learning-rate: 0.1
+  momentum: 0.9
+  epsilon: 0.031
+  num-steps: 10
+  step-size: 0.007
+  beta: 6.0
+fcnet5:
+  batch-size: 128
+  test-batch-size: 128
+  epochs: 100
+  weight-decay: 0
+  learning-rate: 0.01
+  momentum: 0.3
+  epsilon: 0.031
+  num-steps: 40
+  step-size: 0.01
+  beta: 1.0
+fcnet10:
+  batch-size: 128
+  test-batch-size: 128
+  epochs: 100
+  weight-decay: 0
+  learning-rate: 0.01
+  momentum: 0.3
+  epsilon: 0.031
+  num-steps: 40
+  step-size: 0.01
+  beta: 1.0
+conv1dnet:
+  batch-size: 128
+  test-batch-size: 128
+  epochs: 100
+  weight-decay: 0
+  learning-rate: 0.01
+  momentum: 0.3
+  epsilon: 0.031
+  num-steps: 40
+  step-size: 0.01
+  beta: 1.0
+conv2dnet:
+  batch-size: 128
+  test-batch-size: 128
+  epochs: 100
+  weight-decay: 0
+  learning-rate: 0.01
+  momentum: 0.3
+  epsilon: 0.031
+  num-steps: 40
+  step-size: 0.01
+  beta: 1.0
+PDF:
+  batch-size: 128
+  test-batch-size: 128
+  epochs: 100
+  weight-decay: 0
+  learning-rate: 0.01
+  momentum: 0.3
+  epsilon: 0.031
+  num-steps: 40
+  step-size: 0.01
+  beta: 1.0
+Drebin:
+  batch-size: 128
+  test-batch-size: 128
+  epochs: 100
+  weight-decay: 0
+  learning-rate: 0.01
+  momentum: 0.3
+  epsilon: 0.031
+  num-steps: 40
+  step-size: 0.01
+  beta: 1.0

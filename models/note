@@ -1,0 +1,6 @@
+How to modify model for deepdiverge:
+1. add forward_act method to output activation values
+2. update run.py for which model/dataset to load and the path
+3. update model.yaml
+4. update para.yaml (for training only)
+5. model_data.yaml

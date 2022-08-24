@@ -1,0 +1,18 @@
+wideresnet:
+  "cifar10"
+smallcnn:
+  "mnist"
+densenet121:
+  "cifar10"
+fcnet5:
+  "mnist"
+fcnet10:
+  "mnist"
+conv1dnet:
+  "mnist"
+conv2dnet:
+  "mnist"
+PDF:
+  "PDF"
+Drebin:
+  "Drebin"

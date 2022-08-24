@@ -1,0 +1,64 @@
+pre-trained models:
+https://github.com/yaodongyu/TRADES
+
+#######nn sequential####
+=> use index to access nn sequential layers
+model.classifier[0].weight
+=> model.classifier is a nn sequential
+
+pgd_attack_mnist.py: evaluate the robustness of CNN
+
+model.load_state_dict(torch.load(args.model_path,map_location=device))
+=> "map_location=device" to use cpu
+
+python gen_adv_cifar10.py --white-box-attack False --no-cuda
+python pdg_attack_cifar10.py --white-box-attack False --gen False --diff True --source-model-path ./checkpoints/model_cifar_wrn.pt --target-model-path ./checkpoints/model-wideres-epoch20.pt
+
+#########save
+>>> t = torch.tensor([1., 2.])
+>>> torch.save(t, 'tensor.pt')
+>>> torch.load('tensor.pt')
+tensor([1., 2.])
+
+np.save("data_attack/cifar10_X_adv.npy", X_pgd.detach().cpu().numpy())
+
+#To train cifar original:
+python train_trades_cifar10.py --no-cuda False --adv False
+
+parseargument does not automatically converts True, False to bool, use "action='store_true', default=False," instead
+
+########save and load
+torch save as a dataset, torch load is also a dataset
+
+########dimension
+use ".unsqueeze(0)" to expand one dimension
+
+##########dataframe
+when merge or concatenate dataframes, make sure the column names of individual dataframe are not overlapped
+
+pd.concat(df,axis=1) to concatentate the axis 1 (setting incorrect axis will result in NaN)
+
+##########step by step############
+
+
+############pandas############
+
+pandas does not count index as the first column
+
+np.linspace is preferred over np.arrange that the number of samples can be explicitly chosen
+df index can be used to specify both columns or entry: string index specifies column and int index specifies entry
+
+Pandas series is more or less the same as numpy (e.g., both use "where" for filtering, but where is technically different, pandas assigned dropped element as value "NaN")
+
+filter use language sugar: x[x > 2]
+
+pandas and dataframe are always associated with an index
+
+df.filter(like = 'mu', axis=0): filter the row whose index contains "mu"
+
+############python#############
+
+=> to handle optional input
+-> either set default value in parseargument
+-> or check None in the programme
+=> parse arguement assumes all inputs are string type, even the default value is not string type
